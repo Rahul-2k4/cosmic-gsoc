@@ -1,23 +1,25 @@
 # Regolith COSMIC Qualification Evidence
 
-This repository hosts the screenshot and walkthrough evidence referenced by the GSoC proposal for building a COSMIC-based Wayland session for Regolith.
+This folder holds the screenshots and walkthrough GIF linked from my GSoC proposal for building a COSMIC-based Wayland session for Regolith.
 
-## Evidence Map
+I kept this repo simple on purpose: each file here backs a specific claim in the proposal, and the notes below say what it proves and what it does not.
 
-| File | Claim Supported | Strength | Notes |
-|---|---|---|---|
-| `screenshots/terminal-proof-final.png` | Core session processes are live in the experimental session: `cosmic-session`, `sway`, `trawld`, `cosmic-settings-daemon`, `cosmic-osd` | Strong | Also shows `gnome-session-bin` absent. The current runtime still has GNOME helper processes such as `gnome-session-ctl --monitor`, so the narrow `gnome-session-bin` claim is the accurate one. |
-| `screenshots/desktop-osd.png` | `cosmic-osd` volume overlay renders in the live session | Strong | Clear in-session OSD proof with status bar visible. |
-| `screenshots/cosmic-settings-proof.png` | `cosmic-settings` runs inside the Regolith COSMIC session | Strong | Sound page visible in the live session. |
-| `screenshots/demo-recording.gif` | End-to-end walkthrough of the qualification environment | Strong | Best holistic proof artifact; kept as hosted evidence rather than inline proposal media. |
-| `screenshots/desktop-clean.png` | Clean desktop view of the session | Supporting | Useful context, but redundant with stronger OSD and walkthrough evidence. |
-| `screenshots/greetd-login.png` | Session is available from the greeter/login flow | Supporting | Kept as supporting evidence only. |
-| `screenshots/lockscreen.png` | Current lock path uses `gtklock` | Supporting | Honest proof for the current `swayidle` + `gtklock` lock path. |
+## What Each File Shows
 
-## Proposal Notes
+| File | What it proves | Notes |
+|---|---|---|
+| `screenshots/terminal-proof-final.png` | The experimental session is running with `cosmic-session`, `sway`, `trawld`, `cosmic-settings-daemon`, and `cosmic-osd`. It also shows that `gnome-session-bin` is not in the session path. | This is the terminal proof I want reviewers to use, not the older compressed screenshot. It is intentionally narrow: the current runtime still has GNOME helper processes such as `gnome-session-ctl --monitor`, so I am not claiming that every GNOME-related process is gone. |
+| `screenshots/desktop-osd.png` | `cosmic-osd` is working in the live session. | This is the clearest visual proof in the set. |
+| `screenshots/cosmic-settings-proof.png` | `cosmic-settings` is running inside the Regolith COSMIC session. | Sound page shown in-session. |
+| `screenshots/demo-recording.gif` | A full walkthrough of the qualification environment. | Best overall proof artifact, but better as a hosted link than an inline image in the proposal PDF. |
+| `screenshots/desktop-clean.png` | Clean desktop view of the session. | Useful as supporting context, but weaker than the OSD screenshot and the walkthrough. |
+| `screenshots/greetd-login.png` | The session is available from the greeter. | Supporting evidence only. |
+| `screenshots/lockscreen.png` | The current lock path uses `gtklock`. | This matches the current `swayidle` + `gtklock` setup described in the proposal. |
 
-- The proposal should use `terminal-proof-final.png` as the current terminal-proof artifact instead of the older compressed `terminal-proof.png`.
-- For the terminal proof, the accurate claim is:
-  - core COSMIC session processes are live
+## Notes For The Proposal
+
+- Use `terminal-proof-final.png` as the terminal-proof artifact.
+- For the terminal section, the accurate claim is:
+  - the core COSMIC session processes are live
   - `gnome-session-bin` is absent
-- Avoid broader wording such as "`pgrep gnome-session` returns empty", because the current runtime still includes GNOME helper processes.
+- Do not use broader wording such as "`pgrep gnome-session` returns empty." That is stronger than the current runtime evidence supports.
