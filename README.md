@@ -13,9 +13,9 @@ Qualification evidence and supporting artifacts for my GSoC 2026 proposal: **Bui
 | [`screenshots/xdg-desktop-token.png`](screenshots/xdg-desktop-token.png) | `XDG_CURRENT_DESKTOP` is `Regolith-Wayland:COSMIC:sway` with no `GNOME` token. | Direct proof for the GNOME-decoupling claim. |
 | [`screenshots/cosmolith-process.png`](screenshots/cosmolith-process.png) | The `cosmolith` daemon is running in the live COSMIC session. | Direct runtime proof that the bridge process is up. |
 | [`screenshots/keyboard-input-proof.png`](screenshots/keyboard-input-proof.png) | Sway's input state reflects the running keyboard configuration. | Supports the `cosmic-config -> cosmolith -> Sway` path, but does not by itself prove every layout-switching or variant case is solved. |
-| [`screenshots/desktop-osd.png`](screenshots/desktop-osd.png) | `cosmic-osd` is working in the live session. | Best standalone OSD proof. |
-| [`screenshots/cosmic-settings-proof.png`](screenshots/cosmic-settings-proof.png) | `cosmic-settings` is running inside the Regolith COSMIC session. | Standalone settings-app proof. |
+| [`screenshots/desktop-osd.png`](screenshots/desktop-osd.png) | `cosmic-osd` is working in the live session. | Standalone OSD proof. |
+| [`screenshots/cosmic-settings-proof.png`](screenshots/cosmic-settings-proof.png) | `cosmic-settings` is running inside the Regolith COSMIC session. | Standalone settings proof. |
 | [`screenshots/demo-recording.gif`](screenshots/demo-recording.gif) | A full walkthrough of the qualification environment. | Best complete walkthrough artifact. |
-| [`screenshots/desktop-clean.png`](screenshots/desktop-clean.png) | Clean desktop view of the session. | Supporting visual context only. |
-| [`screenshots/greetd-login.png`](screenshots/greetd-login.png) | The session is available from the greeter. | Supporting evidence only. |
-| [`screenshots/lockscreen.png`](screenshots/lockscreen.png) | The tested lock path uses `gtklock`. | Supporting evidence for the current lock path. |
+| [`screenshots/desktop-clean.png`](screenshots/desktop-clean.png) | Clean desktop view of the session. | Desktop context only. |
+| [`screenshots/greetd-login.png`](screenshots/greetd-login.png) | The session is available from the greeter. | Greeter availability proof only. |
+| [`screenshots/lockscreen.png`](screenshots/lockscreen.png) | The tested lock path uses `gtklock`. | Current lock-path proof only. |
