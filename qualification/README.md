@@ -15,11 +15,3 @@ I kept this repo simple on purpose: each file here backs a specific claim in the
 | `screenshots/desktop-clean.png` | Clean desktop view of the session. | Useful as supporting context, but weaker than the OSD screenshot and the walkthrough. |
 | `screenshots/greetd-login.png` | The session is available from the greeter. | Supporting evidence only. |
 | `screenshots/lockscreen.png` | The current lock path uses `gtklock`. | This matches the current `swayidle` + `gtklock` setup described in the proposal. |
-
-## Notes For The Proposal
-
-- Use `terminal-proof-final.png` as the terminal-proof artifact.
-- For the terminal section, the accurate claim is:
-  - the core COSMIC session processes are live
-  - `gnome-session-bin` is absent
-- Do not use broader wording such as "`pgrep gnome-session` returns empty." That is stronger than the current runtime evidence supports.
